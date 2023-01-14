@@ -290,9 +290,9 @@ function vec3Normalize(a) {
 
 function mat4Transpose(a, transposed) {
     var t = 0;
-    for (var i = 0; i < 3; ++i) {
-        for (var j = 0; j < 3; ++j) {
-            transposed[t++] = a[j + 4 + i];
+    for (var i = 0; i < 4; ++i) {
+        for (var j = 0; j < 4; ++j) {
+            transposed[t++] = a[j * 4 + i];
         }
     }
 }
